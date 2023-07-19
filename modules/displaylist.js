@@ -14,8 +14,7 @@ export const displayBooks = (bookList) => {
     removeBtn.textContent = 'Remove';
     removeBtn.classList.add('remove');
     list.appendChild(removeBtn);
-   removeBtn.addEventListener('click', () => removeBook( bookList, index));
-  
+    removeBtn.addEventListener('click', () => removeBook(bookList, index));
 
     if ((index + 1) % 2 !== 0) {
       booksC.classList.add('odd');
@@ -27,6 +26,6 @@ export const displayBooks = (bookList) => {
   } else {
     bookList.store.classList.remove('show');
   }
-
 };
 
+export default displayBooks;
