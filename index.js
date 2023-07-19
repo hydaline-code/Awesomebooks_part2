@@ -2,6 +2,8 @@
 import { addNewBook } from './modules/addbook.js';
 import { displayBooks } from './modules/displaylist.js';
 import { Swap } from './modules/swap.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+
 
   class BookList {
     constructor() {
@@ -34,3 +36,7 @@ import { Swap } from './modules/swap.js';
 
 const bookList = new BookList();
 Swap();
+
+const now = DateTime.now();
+const formattedDate = now.toFormat('yyyy-MM-dd HH:mm:ss');
+document.getElementById('time').innerHTML = formattedDate;
