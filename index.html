@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Books Store</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Awesome Books</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#booklist">List</a> |</li>
+        <li><a href="#form">Add new</a> |</li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h3 id="time"></h3>
+  <section class="booklist" data-section-id="booklist">
+    <a name="booklist"></a>
+    <h2>All Awesome Books</h2>
+    <div class="store">
+      <ul id="books"></ul>
+    </div>
+  </section>
+
+  <section class="form" data-section-id="form">
+    <a name="form"></a>
+    <h2>Add a new Book</h2>
+    <form class="add-book" method="" action="">
+      <input type="text" id="title" placeholder="Title"><br>
+      <input type="text" id="author" placeholder="Author"><br>
+      <button id="add" type="submit">Add</button>
+    </form>
+  </section>
+
+  <section class="contact" data-section-id="contact">
+    <a name="contact"></a>
+    <h2>Contact Information</h2>
+    <p class="contact-p">Do you have any question or you want to say "Hello"?<br>
+      You can reach out to us</p>
+    <ul class="contacts">
+      <li>Our email <a href="wecode.com">wecode.com</a></li>
+      <li>Our phone number: <a href="+695456849">+237695456849</a></li>
+      <li>Our address: <a href="Ndere, Bamyanga-Ecole Gazelle">Ndere, Bamyanga-Ecole Gazelle</a></li>
+    </ul>
+  </section>
+
+ 
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
